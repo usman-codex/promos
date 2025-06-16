@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromoWeb</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-promo">PROMO</span><span class="logo-web">WEB</span>
+      </a>
+      <nav class="main-navigation">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          <span class="hamburger-icon"></span>
+        </button>
+        <ul id="primary-navigation" class="nav-links">
+          <li><a href="index.html" class="active">Home page</a></li>
+          <li><a href="#about">About company</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="#" id="navLoginBtn" class="nav-link">Login</a>
+        <a href="#" id="navSignupBtn" class="nav-link btn btn-signup">Signup</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about-company-section">
+      <div class="container">
+        <h2>About company</h2>
+        <p>
+          PromoWeb is a modern IT company specializing in web development, UI/UX design, SEO and digital
+          marketing, as well as graphic design. Our mission is to create innovative solutions that help businesses
+          grow and thrive in the digital landscape.
+        </p>
+      </div>
+    </section>
+    <!-- Image set via CSS -->
+    <section class="hero-image-section">
+
+    </section>
+
+  </main>
+
+  <section class="why-choose-us-section">
+    <div class="container">
+      <h2 class="section-title">Why Choose PromoWeb?</h2>
+      <div class="features-grid">
+
+        <div class="feature-item">
+          <h3>Expert Team</h3>
+          <p>At PromoWeb, we stay ahead of the curve by utilizing the latest technologies and industry best practices.
+            This commitment to staying current allows us to develop effective solutions that not only meet but exceed
+            modern digital standards, ensuring your business remains competitive.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Cutting-Edge Technology</h3>
+          <p>We believe in building strong relationships with our clients. Our transparent communication and
+            collaborative process ensure you are involved every step of the way. We value your feedback and make it a
+            priority to keep you informed, ensuring a smooth and successful project journey.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Client-Centric Approach</h3>
+          <p>We believe in building strong relationships with our clients. Our transparent communication and
+            collaborative process ensure you are involved every step of the way. We value your feedback and make it a
+            priority to keep you informed, ensuring a smooth and successful project journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Authentication Modal -->
+  <div id="authModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal-btn">×</span>
+      <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login-radio" checked>
+            <input type="radio" name="slide" id="signup-radio">
+            <label for="login-radio" class="slide login">Login</label>
+            <label for="signup-radio" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+
+            <form id="actualLoginForm" class="login-form-actual">
+              <div class="field">
+               
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+               
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <!-- displaying login messages -->
+              <div id="loginMessage" class="form-message"></div>
+              <div class="signup-link">Not a member? <a href="#" class="switch-to-signup-link">Signup now</a></div>
+            </form>
+
+            <!-- SIGNUP FORM -->
+            <form id="actualSignupForm" class="signup-form-actual">
+              <div class="field">
+           
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+               
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+              </div>
+              <div class="field">
+               
+                <input type="password" id="signupConfirmPassword" name="signupConfirmPassword"
+                  placeholder="Confirm password" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+              <!-- displaying signup messages -->
+              <div id="signupMessage" class="form-message"></div>
+              <div class="login-link">Already a member? <a href="#" class="switch-to-login-link">Login now</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
